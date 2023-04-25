@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* top: 40px; */
+}
+.count{
+     position: relative;
+    top: 115px; 
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: darkcyan;
+    margin: 30px;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes first{
+     0%{
+        transform: skew(-30deg);
+    } 
+     100%{
+        transform: skew(30deg);
+    } 
+}
+.item1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(196, 150, 158);
+    animation-name: second;
+    margin: 30px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes second{
+    0%{
+        transform: skewY(-30deg);
+    }
+    100%{
+        transform: skewY(30deg);
+    }
+}
+.item2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(141, 169, 142);
+    margin: 30px;
+    animation: third 2s infinite normal;
+    /* transition-delay: -3s; */
+}
+@keyframes third{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid gray;
+    margin: 30px;
+}
+.item3{
+    background-color: rgba(78, 157, 179, 0.726);
+    animation: four 2s infinite alternate ;
+}
+@keyframes four{
+    0%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.item4{
+    background-color: brown;
+    animation: five 2s infinite alternate;
+}
+@keyframes five{
+    0%{
+        transform: scaleX(0.4);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.item5{
+    background-color: green;
+    animation: six 2s infinite alternate;
+}
+@keyframes six{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+a{
+    font-size: 30px;
+    color:purple;
+    /* padding-left: 480px; */
+    /* margin-bottom: 50px; */
+    position: relative;
+    top: 750px;
+    left: 400px;
+}
+.high{
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column;
+    align-items: center; */
+    position: relative;
+    top: 40px;
+    
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(115, 166, 11);
+    margin-bottom: 20px;
+}
+.one{
+    transition-property: width;
+    transition-duration: 2s;
+}
+.one:hover{
+    width: 300px;
+}
+.two{
+    transition-property: width,height;
+    transition-duration: 2s , 3s;
+}
+.two:hover{
+    width: 300px;
+    height: 300px;
+}
+.three{
+    transition-property: width;
+    transition-duration: 3s;
+}
+.three:hover{
+    width: 300px;
+}
+.four{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+.four:hover{
+    width: 300px;
+}
+.five{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.five:hover{
+    width: 300px;
+}
+.six{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.six:hover{
+    width: 300px;
+}
+.seven{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.seven:hover{
+    width: 300px;
+}
+.box2{
+    position: relative;
+    top: 50px;
+    left: 560px;
+}
+.span{
+    color: rgb(8, 207, 207);
+    text-decoration: underline rgb(8, 207, 207);
+    position: relative;
+    top: 85px;
+    left: 475px;
+}
